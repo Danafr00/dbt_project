@@ -22,6 +22,8 @@ sources:
         columns:
           - name: kode_transaksi
             data_type: STRING
+            tests:
+                - unique
           - name: tgl_transaksi
             data_type: TIMESTAMP
           - name: kode_cabang
