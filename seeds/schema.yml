@@ -1,0 +1,38 @@
+version: 2
+sources:
+  - name: google_sheets
+    description: >
+      This source contains data stored in Google Sheets that are manually maintained.
+    project: latihan-345909
+    dataset: dbt_project
+    loader: external_table
+    tags:
+      - source
+      - google_sheet
+    tables:
+      - name: tr_penjualan
+        description: >
+          sales transaction table
+        external:
+          options:
+            format: GOOGLE_SHEETS
+            uris: ['https://docs.google.com/spreadsheets/d/17BAhZG5qvdQQ3uWZrMlVdC7bgj2hlZXR84mZDeb0jtI']
+            sheet_range: 'tr_penjualan'
+            skip_leading_rows: 1
+        columns:
+          - name: kode_transaksi
+            data_type: STRING
+            tests:
+                - unique
+          - name: tgl_transaksi
+            data_type: TIMESTAMP
+          - name: kode_cabang
+            data_type: STRING
+          - name: kode_kasir
+            data_type: STRING
+          - name: kode_item
+            data_type: STRING
+          - name: kode_produk
+            data_type: STRING
+          - name: jumlah_pembelian
+            data_type: INTEGER
