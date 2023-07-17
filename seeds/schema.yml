@@ -4,7 +4,7 @@ sources:
     description: >
       This source contains data stored in Google Sheets that are manually maintained.
     project: latihan-345909
-    dataset: side_project
+    dataset: dbt_project
     loader: external_table
     tags:
       - source
