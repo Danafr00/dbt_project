@@ -1,4 +1,4 @@
-{{ config(materialized='table', database="side_project") }}
+{{ config(materialized='table') }}
 
 select *
 from {{ ref('ms_cabang') }}
