@@ -1,3 +1,5 @@
+{{ config(database="side_project") }}
+
 WITH tabel_keuntungan AS(
     SELECT mc.nama_cabang, 
         FORMAT_DATE('%Y-%m (%B)', tp.tgl_transaksi) AS bulan,

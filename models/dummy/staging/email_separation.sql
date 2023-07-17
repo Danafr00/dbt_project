@@ -1,3 +1,5 @@
+{{ config(database="side_project") }}
+
 SELECT email,
 SPLIT(email, "@")[OFFSET(0)] as username,
   SPLIT(SPLIT(email, "@")[OFFSET(1)], ".")[OFFSET(0)] as domain_name,

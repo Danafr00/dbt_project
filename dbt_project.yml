@@ -39,3 +39,4 @@ models:
         materialized: view
       production:
         materialized: table
+    +database: side_project

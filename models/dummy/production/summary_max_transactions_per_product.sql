@@ -1,3 +1,5 @@
+{{ config(database="side_project") }}
+
 SELECT	nama_cabang,
 		nama_depan,
 		tgl_transaksi,
