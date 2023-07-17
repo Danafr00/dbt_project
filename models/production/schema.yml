@@ -1,0 +1,18 @@
+
+version: 2
+
+models:
+    - name: federated_tr_penjualan
+      description: "fact table containing all transactions"
+      columns:
+          - name: kode_transaksi
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: summary_max_transactions_per_product
+      description: "Summary of maximum transactions per product"
+
+    - name: summary_revenue_growth_monthly
+      description: "Summary of revenue growth of every branch monthly"
