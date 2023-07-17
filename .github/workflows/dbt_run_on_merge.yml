@@ -20,7 +20,7 @@ jobs:
       DBT_ACCOUNT_ID: 173493 # enter your account id
       DBT_PROJECT_ID: 265597 # enter your project id
       DBT_PR_JOB_ID:  377872 # enter your job id
-      DBT_API_KEY: ${{ secrets.DBT_API_KEY }}
+      DBT_API_KEY: "c136669d41509edbe7db8887844a3e0e22163833"
       DBT_JOB_CAUSE: 'GitHub Pipeline CI Job' 
       DBT_JOB_BRANCH: ${{ github.ref_name }}
 
