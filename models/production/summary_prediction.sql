@@ -30,7 +30,7 @@ SELECT
     mfi,
     a.company_name,
     b.prediction,
-    b.low louwer_bound,
+    b.low lower_bound,
     b.high upper_bound,
 FROM `latihan-345909.stocks.stocks_table` a
     FULL OUTER JOIN prediction b 
