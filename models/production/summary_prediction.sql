@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 WITH prediction AS (
     SELECT company_name,
         prediction,
